@@ -68,6 +68,22 @@ const projects = [
     image: images.project8,
     link: "https://dappradar.com/blog/will-primelab-on-near-redefine-web3",
   },
+  {
+    id: 9,
+    title: "DeFi 4 DeSci Project",
+    fullTitle: "DeFi solution for decentralized science (DeSci) using OriginTrail’s DKG",
+    description: "Block Build’s solution DeFi 4 DeSci was awarded 🥉 3rd place in the competitive OriginTrail track at ETH Belgrade 2025!",
+    image: images.project9,
+    link: "https://www.linkedin.com/posts/block-build-bor_defi-desci-web3-activity-7340803611259482113-rZCx?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGvRI0BLPzmfWjHFhlI5rnAMDCxvzNlu24",
+  },
+  {
+    id: 10,
+    title: "Superteam Balkan DeSci Hub",
+    fullTitle: "Superteam DeSci Challenge",
+    description: "The Superteam DeSci aims to encourage scientific discussion on decentralization and blockchain technology, specifically on Solana.",
+    image: images.project10,
+    link: "hhttps://superteam-desci-hub.github.io/open-science/",
+  },
 
   // Add more projects as needed
 ];

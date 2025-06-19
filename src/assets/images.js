@@ -8,17 +8,20 @@ import project5 from "./RTI.jpeg";
 import project6 from "./vidua.png";
 import project7 from "./passport.jpg";
 import project8 from "./near.png";
+import project9 from "./otethbg.jpg";
+import project10 from "./stdesci.png";
 import partner1 from "./LedgerLeopard.png";
 import partner2 from "./StayDirect.png";
 import partner3 from "./UNDP.png";
 import partner4 from "./ReSPA.png";
-import partner5 from "./StayRafa.png";
+import partner5 from "./stblkn.jpeg";
 import partner6 from "./nenadsky.webp";
 import partner7 from "./smartconnpn.png";
 import partner8 from "./primelab.png";
 import partner9 from "./NBG.png";
 import partner10 from "./zen_logo.png";
 import partner11 from "./kyramarios.png";
+import partner12 from "./StayRafa.png";
 
 export const images = {
   bbblogo,
@@ -31,6 +34,8 @@ export const images = {
   project6,
   project7,
   project8,
+  project9,
+  project10,
   partner1,
   partner2,
   partner3,
@@ -41,5 +46,6 @@ export const images = {
   partner8,
   partner9,
   partner10,
-  partner11
+  partner11,
+  partner12
 };
