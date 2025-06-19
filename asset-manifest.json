@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/we3b/static/css/main.5bd9d4d6.css",
-    "main.js": "/we3b/static/js/main.a2a50656.js",
+    "main.js": "/we3b/static/js/main.692890d6.js",
     "static/media/RTI.jpeg": "/we3b/static/media/RTI.3ae693ade179a2561d09.jpeg",
     "static/media/Nelutai.jpg": "/we3b/static/media/Nelutai.8e18faa9b99b072786fe.jpg",
+    "static/media/otethbg.jpg": "/we3b/static/media/otethbg.74f896745fc6ca2b949f.jpg",
     "static/media/sea.png": "/we3b/static/media/sea.015cf615e9047f3e765b.png",
+    "static/media/stdesci.png": "/we3b/static/media/stdesci.a5073e21f234206fe51a.png",
     "static/media/bbblogo.png": "/we3b/static/media/bbblogo.7e4f03db687d019f3b69.png",
     "static/media/lllogo.png": "/we3b/static/media/lllogo.f845aba4777d48d6488d.png",
     "static/media/zen_logo.png": "/we3b/static/media/zen_logo.dc4a532d39d6f00e7c37.png",
@@ -17,10 +19,10 @@
     "static/media/UNDP.png": "/we3b/static/media/UNDP.a4bccf90be701b87424a.png",
     "index.html": "/we3b/index.html",
     "main.5bd9d4d6.css.map": "/we3b/static/css/main.5bd9d4d6.css.map",
-    "main.a2a50656.js.map": "/we3b/static/js/main.a2a50656.js.map"
+    "main.692890d6.js.map": "/we3b/static/js/main.692890d6.js.map"
   },
   "entrypoints": [
     "static/css/main.5bd9d4d6.css",
-    "static/js/main.a2a50656.js"
+    "static/js/main.692890d6.js"
   ]
 }
