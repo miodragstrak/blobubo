@@ -1,43 +1,50 @@
-import React from "react";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import "../styles/footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <p className="footer-brand">
-          Block Build Bor × Ledger Lemur
-        </p>
+      <div className="footer-inner">
 
-        <div className="social-links">
+        {/* Social icons */}
+        <div className="footer-socials">
           <a
-            href="https://www.linkedin.com/company/block-build-bor/"
+            href="https://www.linkedin.com/company/block-build-bor"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
-            LinkedIn
+            <FaLinkedin />
           </a>
 
           <a
             href="https://github.com/miodragstrak"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
-            GitHub
+            <FaGithub />
           </a>
 
           <a
             href="https://x.com/Materializeee"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
           >
-            X
+            <FaTwitter />
           </a>
         </div>
 
+        {/* Text */}
         <p className="footer-copy">
-          © 2025 Block Build Bor · Ledger Lemur
+          © {new Date().getFullYear()} we3b. All rights reserved.
         </p>
+
+        <p className="footer-sub">
+          AI • Blockchain • Decentralized Systems
+        </p>
+
       </div>
     </footer>
   );
