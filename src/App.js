@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import Partners from "./pages/Partners";
 import About from "./pages/About";
+import Footer from "./components/Footer";
 import "./styles/global.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
+    <Footer />
     </>
   );
 }

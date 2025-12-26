@@ -1,56 +1,88 @@
 .about-container {
-    width: 60%;
-    margin: 40px auto;
-    text-align: left;
-    padding-top: 225px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    max-width: 50%;
-  }
-  
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .team-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-  }
-  
-  .team-table td {
-    padding: 12px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .team-member {
-    width: 30%;
-    font-weight: bold;
-    vertical-align: top;
-  }
-  
-  .team-bio {
-    width: 70%;
-    vertical-align: top;
-  }
-  
-  .contact-section {
-    background: rgb(185, 185, 185);;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .contact-section p {
-    margin: 5px 0;
-  }
-  
-  .contact-section a {
-    color: #0073e6;
-    text-decoration: none;
-  }
-  
-  .contact-section a:hover {
-    text-decoration: underline;
-  }  
+  padding: 120px 24px 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-intro p {
+  max-width: 720px;
+  color: #ccc;
+}
+
+.about-section {
+  margin-top: 80px;   /* 👈 KLJUČNO */
+}
+
+.about-contact {
+  margin-top: 100px; /* 👈 još malo više */
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  background: #111;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.team-card.secondary {
+  background: #0d0d0d;
+}
+
+.team-role {
+  color: #7aa2ff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.team-avatar {
+  margin-bottom: 12px;
+}
+
+.team-avatar img,
+.avatar-placeholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #222;
+  color: #7aa2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.linkedin-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #7aa2ff;
+  text-decoration: none;
+}
+
+.linkedin-link:hover {
+  text-decoration: underline;
+}
+
+.team-card.secondary::after {
+  content: "External";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.7rem;
+  color: #aaa;
+}

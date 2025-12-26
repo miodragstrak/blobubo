@@ -1,16 +1,58 @@
 import React from "react";
-import "../styles/homepage.css"; 
-// import { Link } from "react-router-dom";
+import "../styles/homepage.css";
+import NewsUpdates from "../components/NewsUpdates";
+import Awards from "../components/Awards";
 
 const HomePage = () => {
   return (
-    <div className="homepage">
-      <h1 className="slogan"> Welcome to the World of Digital Innovation </h1>
-      <p className="text"> Empowering businesses with AI-driven automation, blockchain, and IoT to build a smarter, more connected future. </p>
-      <p className="text"> We specialize in digital transformation, process automation, and workflow optimization, 
-        ensuring seamless operations. At the cutting edge of technology, we develop innovative solutions that enhance connectivity, 
-        security, and intelligent automation for a future-ready business landscape.</p>
-    </div>
+    <main className="homepage">
+
+      {/* HERO / INTRO */}
+      <section className="hero">
+        <h1>Building the future of AI, blockchain, and decentralized innovation</h1>
+        <p className="hero-text">
+          We3b is a technology-focused company specializing in AI-driven systems,
+          blockchain infrastructure, and decentralized solutions. We help
+          organizations design, build, and scale intelligent, secure, and
+          future-proof digital products.
+        </p>
+      </section>
+
+      {/* WHAT WE DO */}
+      <section className="services">
+        <h2>What We Do</h2>
+
+        <div className="services-grid">
+          <div className="service-card">
+            <h3>🧠 Artificial Intelligence</h3>
+            <p>
+              AI agents, intelligent assistants, and automation systems designed
+              for real-world applications.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <h3>🔗 Blockchain & Web3</h3>
+            <p>
+              Decentralized applications, smart contracts, tokenized systems,
+              and DeSci infrastructure.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <h3>⚙️ Product & Systems Engineering</h3>
+            <p>
+              End-to-end product development, API-first architectures, and
+              scalable system design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <NewsUpdates />
+      <Awards />
+
+    </main>
   );
 };
 
