@@ -1,24 +1,164 @@
+/* ======================
+   PAGE WRAPPER
+====================== */
+
 .homepage {
+  background-color: #0b0f1a;
+  color: #e5e7eb;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px; /* normalan spacing */
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center;
-  align-items: flex-start; /* Align content to the left */
-  height: 75vh;
-  padding-left: 35%; /* Distance from the left border */
-  color: #f4f4f4;
-  background-color: #333333;
+  flex-direction: column;
+  gap: 96px;
 }
 
-.slogan {
-  font-family: Arial, sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px; /* Space between title and paragraph */
+/* ======================
+   HERO
+====================== */
+
+.hero {
+  max-width: 720px;
 }
 
-.text {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  max-width: 50%; /* Limit text width for better readability */
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #e5e7eb;
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #9ca3af;
+}
+
+/* ======================
+   SECTION HEADINGS
+====================== */
+
+.services h2,
+.news h2,
+.awards h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+/* ======================
+   SERVICES
+====================== */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.service-card {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.9),
+    rgba(2, 6, 23, 0.9)
+  );
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+  transform: translateY(-4px);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+.service-card p {
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+/* ======================
+   NEWS
+====================== */
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 720px;
+}
+
+.news-item {
+  border-left: 3px solid #3b82f6;
+  padding-left: 20px;
+}
+
+.news-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: #e5e7eb;
+}
+
+.news-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #d1d5db;
+}
+
+.news-item a {
+  color: #38bdf8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+}
+
+/* ======================
+   AWARDS
+====================== */
+
+.awards-list {
+  list-style: none;
+  padding: 0;
+  max-width: 720px;
+}
+
+.awards-list li {
+  font-size: 1.05rem;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media (max-width: 768px) {
+  .homepage {
+    gap: 72px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
 }
